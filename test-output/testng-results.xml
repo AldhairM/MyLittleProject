@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13389" started-at="2020-04-01T22:50:37 CST" finished-at="2020-04-01T22:50:51 CST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@467aecef]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="13389" started-at="2020-04-01T22:50:37 CST" finished-at="2020-04-01T22:50:51 CST">
+      <class name="testRunners.FirstRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.FirstRunner@467aecef]" name="setUpClass" is-config="true" duration-ms="301" started-at="2020-04-01T22:50:37 CST" finished-at="2020-04-01T22:50:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@467aecef]" name="runScenario" duration-ms="13042" started-at="2020-04-01T22:50:38 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-01T22:50:51 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User shold proced to CheckOut only a product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify all the ways to buy a product"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.click(Unknown Source)
+at PageObjects.LogInPage.go(LogInPage.java:38)
+at stepDefinitions.GivenTest.user_login(GivenTest.java:22)
+at ✽.User login "test800@hotmail.com" or "test123"(file:///C:/Users/test.admin/WorkspaceAutomate/TestCase1/src/test/resources/featureFiles/CheckOut.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.FirstRunner@467aecef]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-04-01T22:50:51 CST" finished-at="2020-04-01T22:50:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.FirstRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
